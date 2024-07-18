@@ -24,13 +24,26 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.logo{
+.Logo{
     width: 140px;
 }
-
 nav li ul{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+}
+nav li ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav li ul a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
 }
