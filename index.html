@@ -14,8 +14,7 @@
             <img src="img/Logo.png" class="Logo">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>  
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -35,7 +34,7 @@
                 <img src="img/User.jpg">
             </div>
             <div id="about-column-2">
-                <h1 class="sub title">About Me</h1>
+                <h1 class="sub-title">About Me</h1>
                 <p>I am a dedicated IT student who longs to be a CEO of a company that is IT-predominant...........</p>
 
                 <div class="tab-titles">
@@ -66,9 +65,34 @@
         </div>
     </div>
 </div>
+<!------------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/to-do-list.png">
+                <div class="layer">
+                    <h3>To-Do List App</h3>
+                    <p>The app helps you to manage your tasks efficiently.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/c-sharp-app.png">
+                <div class="layer">
+                    <h3>Coffee Shop App</h3>
+                    <p>The app allows you to order online from the comfort of your home.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="button">See more</a>
+    </div>
+</div>
 <script>
-    var tabLinks = document.getElementsByClassName(tab-links);
-    var tabContents = document.getElementsByClassName(tab-contents);
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
     function opentab(tabName)
     {
         for(tabLink of tabLinks)
@@ -80,7 +104,7 @@
             tabContent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add(active-tab);
+        document.getElementById(tabName).classList.add("active-tab");
     }
 </script>
 </body>
