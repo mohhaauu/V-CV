@@ -323,3 +323,8 @@ nav .fa-solid{
         flex-basis: 100%;
     }
 }
+#message{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
