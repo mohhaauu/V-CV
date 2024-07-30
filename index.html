@@ -20,7 +20,7 @@
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div id="header-text">
                 <p>Final year IT student</p>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>July 2024 - Current</span><br>Java Development Intern at InternCareer</li>
+                            <li><span>1 July 2024 - 30July 2024</span><br>Java Development Intern at InternCareer</li>
                             <li><span>March 2024 - Current</span><br>CSIS Student Assistant</li>
                         </ul>
                     </div>
@@ -111,7 +111,7 @@
                     <a href="img/CURRICULUM%20VITAE%20MOHAU.pdf" download class="button button2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                         <textarea name="Message" rows="6" placeholder="Your message"></textarea>
@@ -121,7 +121,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © Mohau.</p>
+            <p>Copyright © Mohau Liphoko.</p>
         </div>
     </div>
     <script>
@@ -149,5 +149,16 @@
             sideMenu.style.right = "-200px";
         }
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyl73vMqr56XKERPNrJN0TgRFDm8DXTwmsURyz5_Ckfy_PJkQwmw0D0DO7gU7jGrLIARQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
