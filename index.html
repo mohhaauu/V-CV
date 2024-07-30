@@ -13,14 +13,14 @@
         <div class="container">
             <nav>
                 <img src="img/Logo.png" class="Logo" alt="Logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>  
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fa-solid fa-square-xmark"></i>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>  
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu"></i>
             </nav>
             <div id="header-text">
                 <p>Final year IT student</p>
@@ -137,6 +137,16 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sideMenu.style.right = "0";
+        }
+        function closemenu(){
+            sideMenu.style.right = "-200px";
         }
     </script>
 </body>
