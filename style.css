@@ -77,10 +77,6 @@ nav {
     margin: 20px 0;
 }
 
-#header-text h1 span {
-    color: #007bff;
-}
-
 /* About Section Styles */
 #about {
     padding: 50px 0;
@@ -93,7 +89,7 @@ nav {
 }
 
 .about-column-1 img {
-    width: 100%;
+    width: 75%;
     border-radius: 10px;
 }
 
