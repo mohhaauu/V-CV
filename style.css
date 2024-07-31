@@ -90,7 +90,10 @@ nav {
 
 .about-column-1 img {
     width: 75%;
+    height: 50;
     border-radius: 10px;
+    display: block; 
+    margin: 0 auto;
 }
 
 .sub-title {
