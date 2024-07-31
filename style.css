@@ -83,15 +83,18 @@ ul li a:hover {
 }
 #header-text {
     padding-top: 150px;
+    text-align: center; /* Add this line to center the text */
 }
 #header-text p {
     color: #fff; /* Set text color to white */
     font-weight: 600;
+    text-align: center; /* Add this line to center the text */
 }
 #header-text h1 {
     color: #fff;
     font-size: 50px;
     line-height: 70px;
+    text-align: center; /* Add this line to center the text */
 }
 button {
     margin-top: 30px;
@@ -168,6 +171,7 @@ button:hover {
     margin-left: 10px; /* Adjust margin as needed */
     position: relative;
     flex-grow: 1; /* Allow the bar to grow */
+    max-width: calc(var(--percentage) * 1%); /* Set max-width based on percentage value */
 }
 .tab-contents ul li .skill-percentage {
     margin-left: 10px; /* Adjust margin as needed */
@@ -229,7 +233,52 @@ button:hover {
     background: #2C2C2C;
     color: #fff;
 }
-@media only screen and (max-width: 768px) {
+
+/* CSS variables for skill percentages */
+#frontend ul li:nth-child(1) .skill-bar {
+    --percentage: 65; /* HTML5 */
+}
+#frontend ul li:nth-child(2) .skill-bar {
+    --percentage: 70; /* CSS3 */
+}
+#frontend ul li:nth-child(3) .skill-bar {
+    --percentage: 65; /* JavaScript */
+}
+#frontend ul li:nth-child(4) .skill-bar {
+    --percentage: 60; /* React.js */
+}
+#backend ul li:nth-child(1) .skill-bar {
+    --percentage: 60; /* Node.js */
+}
+#backend ul li:nth-child(2) .skill-bar {
+    --percentage: 65; /* ASP.NET */
+}
+#tools ul li:nth-child(1) .skill-bar {
+    --percentage: 85; /* Git & GitHub */
+}
+#tools ul li:nth-child(2) .skill-bar {
+    --percentage: 80; /* INTELLIJ IDEA */
+}
+#tools ul li:nth-child(3) .skill-bar {
+    --percentage: 80; /* Visual Studio Code */
+}
+#tools ul li:nth-child(4) .skill-bar {
+    --percentage: 68; /* Responsive design */
+}
+#soft\ skills ul li:nth-child(1) .skill-bar {
+    --percentage: 77; /* Communication */
+}
+#soft\ skills ul li:nth-child(2) .skill-bar {
+    --percentage: 85; /* Teamwork */
+}
+#soft\ skills ul li:nth-child(3) .skill-bar {
+    --percentage: 80; /* Problem-solving skills */
+}
+#soft\ skills ul li:nth-child(4) .skill-bar {
+    --percentage: 85; /* Computer skills & knowledge */
+}
+
+@media only screen and (max-width: 600px) {
     .fa-bars {
         display: block;
     }
