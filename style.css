@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-html {
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     min-height: 100vh;
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
 }
 .container {
     width: 80%;
@@ -30,7 +30,7 @@ ul li {
 }
 ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff; /* Set text color to white */
     font-size: 16px;
     font-weight: 600;
 }
@@ -73,7 +73,7 @@ ul li a:hover {
 }
 .fa-bars {
     font-size: 30px;
-    color: #000;
+    color: #fff; /* Set icon color to white */
     display: none;
 }
 #header {
@@ -85,7 +85,7 @@ ul li a:hover {
     padding-top: 150px;
 }
 #header-text p {
-    color: #000;
+    color: #fff; /* Set text color to white */
     font-weight: 600;
 }
 #header-text h1 {
@@ -135,7 +135,6 @@ button:hover {
     margin: 20px 0;
 }
 #skills {
-    background: #000;
     padding: 100px 0;
 }
 .tab-titles {
@@ -144,7 +143,7 @@ button:hover {
     align-items: center;
 }
 .tab-titles p {
-    color: #fff;
+    color: #fff; /* Set text color to white */
     font-weight: 600;
     width: 25%;
     text-align: center;
@@ -159,11 +158,25 @@ button:hover {
 }
 .tab-contents ul {
     list-style: none;
+    padding-left: 20px; /* Add padding for bullet points */
 }
 .tab-contents ul li {
-    color: #fff;
+    color: #fff; /* Set text color to white */
     margin: 20px 0;
     font-weight: 600;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+}
+.tab-contents ul li .skill-bar {
+    background: #FF4C29;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 10px; /* Adjust margin as needed */
+    position: relative;
+    flex-grow: 1; /* Allow the bar to grow */
+}
+.tab-contents ul li .skill-percentage {
+    margin-left: 10px; /* Adjust margin as needed */
 }
 .active-tab {
     display: block;
@@ -171,12 +184,6 @@ button:hover {
 .active-link {
     background: #FF4C29;
     color: #000;
-}
-.skill-bar {
-    display: inline-block;
-    background: #FF4C29;
-    height: 10px;
-    border-radius: 5px;
 }
 #contact {
     padding: 100px 0;
@@ -187,7 +194,7 @@ button:hover {
     margin: 10px 0;
 }
 .social-icons a {
-    color: #000;
+    color: #fff; /* Set icon color to white */
     text-decoration: none;
     margin-right: 10px;
 }
@@ -205,6 +212,8 @@ button:hover {
     outline: none;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: #333; /* Set input background to dark */
+    color: #fff; /* Set input text color to white */
 }
 .contact-right button {
     width: 100%;
@@ -212,8 +221,8 @@ button:hover {
     margin-top: 20px;
     border: none;
     outline: none;
-    background: #000;
-    color: #fff;
+    background: #FF4C29;
+    color: #000;
     border-radius: 5px;
     cursor: pointer;
 }
