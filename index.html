@@ -40,28 +40,37 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>I am a dedicated IT student who longs to be a CEO of a company that is IT-predominant...</p>
 
+                    <h1 class="sub-title">Technical Proficiency</h1>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('frontend')">Frontend</p>
+                        <p class="tab-links" onclick="opentab('backend')">Backend</p>
+                        <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                        <p class="tab-links" onclick="opentab('softskills')">Soft Skills</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="frontend">
                         <ul>
-                            <li><span>Programming skills</span><br>Developing software applications</li>
-                            <li><span>Communication skills</span><br>Collaborating with team members</li>
-                            <li><span>Quantitative skills</span><br>Developing solutions for managers for better decision-making</li>
+                            <li>HTML5 - <span class="skill-bar" style="width: 80%;">80%</span></li>
+                            <li>CSS3 (Sass/SCSS) - <span class="skill-bar" style="width: 90%;">90%</span></li>
+                            <li>JavaScript - <span class="skill-bar" style="width: 75%;">75%</span></li>
+                            <li>React.js - <span class="skill-bar" style="width: 80%;">80%</span></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="backend">
                         <ul>
-                            <li><span>1 July 2024 - 30July 2024</span><br>Java Development Intern at InternCareer</li>
-                            <li><span>March 2024 - Current</span><br>CSIS Student Assistant</li>
+                            <li>Backend Skill 1 - <span class="skill-bar" style="width: 70%;">70%</span></li>
+                            <li>Backend Skill 2 - <span class="skill-bar" style="width: 65%;">65%</span></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents" id="tools">
                         <ul>
-                            <li><span>Feb 2022 - Current</span><br>North-West University</li>
-                            <li><span>Jan 2017 - Nov 2021</span><br>Afrikaanse Hoerskool Sasolburg</li>
+                            <li>Tool 1 - <span class="skill-bar" style="width: 85%;">85%</span></li>
+                            <li>Tool 2 - <span class="skill-bar" style="width: 80%;">80%</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="softskills">
+                        <ul>
+                            <li>Communication - <span class="skill-bar" style="width: 90%;">90%</span></li>
+                            <li>Teamwork - <span class="skill-bar" style="width: 85%;">85%</span></li>
                         </ul>
                     </div>
                 </div>
@@ -155,17 +164,17 @@
         const form = document.forms['submit-to-google-sheet']
         const message = document.getElementById("message")
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                message.innerHTML = "Message sent succesfully"
-                setTimeout(function(){
-                    message.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    message.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        message.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 </html>

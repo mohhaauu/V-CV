@@ -263,6 +263,63 @@ form .button2{
     font-weight: 300;
     margin-top: 20px;
 }
+/* Add the required CSS for tabs and skill bars */
+.skill-bar {
+    display: inline-block;
+    height: 10px;
+    background: #3498db;
+    border-radius: 5px;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.tab-links {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.tab-links.active-link {
+    background: #3498db;
+    color: white;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+}
+
+.tab-contents ul li span.skill-bar {
+    width: 70%; /* default width, adjust based on skill level */
+}
+
+@media (max-width: 600px) {
+    .tab-titles {
+        flex-direction: column;
+    }
+    .tab-links {
+        margin-bottom: 10px;
+    }
+}
+
 /*----------------------------css for small screen---------------------------*/
 nav .fa-solid{
     display: none;
