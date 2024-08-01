@@ -254,7 +254,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: white;
+    color: blue;
     transform: translateY(-5px);
 }
 .button {
