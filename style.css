@@ -18,6 +18,32 @@ body {
     padding-top: 60px;
 }
 
+#sidemenu {
+    display: flex;
+    list-style: none;
+    right: -200px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: #333;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+#sidemenu li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#sidemenu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 nav {
     display: flex;
     top: 0;
@@ -67,32 +93,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-#sidemenu {
-    display: flex;
-    list-style: none;
-    right: -200px;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background: #333;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.3s;
-    z-index: 2;
-}
-
-#sidemenu li {
-    margin: 10px 0;
-    text-align: center;
-}
-
-#sidemenu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 .fa-bars, .fa-square-xmark {
     cursor: pointer;
     color: #333;
