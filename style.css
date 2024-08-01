@@ -40,7 +40,7 @@ nav ul {
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0 20px;
 }
 
 nav ul li a{
@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 }
 
 #sidemenu a {
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
@@ -105,7 +105,6 @@ nav ul li a:hover::after{
 
 #header-text {
     padding-top: 100px;
-    text-align: center;
 }
 
 #header-text p {
