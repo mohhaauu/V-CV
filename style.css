@@ -246,6 +246,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons a {
+    text-decoration: none;
     color: #333;
     font-size: 30px;
     margin-right: 15px;
@@ -257,22 +258,10 @@ nav ul li a:hover::after{
     color: #007bff;
     transform: translateY(-5px);
 }
-.button {
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.button2 {
-    background: #333;
-}
 
 .button.button2 {
     display: inline-block;
+    background: #333;
 }
 
 .contact-right form {
@@ -302,10 +291,13 @@ form .button2 {
     cursor: pointer;
 }
 .copyright {
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     background: #333;
     color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
 
