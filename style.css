@@ -229,7 +229,7 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
-.contact-left{
+.contact-right{
     flex-basis: 60%;
 }
 .contact-left p {
@@ -257,13 +257,20 @@ nav ul li a:hover::after{
     color: #007bff;
     transform: translateY(-5px);
 }
-
-.button.button2 {
-    display: inline-block;
-    background: #333;
+.button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
+
+.button2 {
+    background: #333;
+}
+
 .contact-left, .contact-right {
     flex: 1;
     padding: 20px;
