@@ -395,6 +395,15 @@ nav .fa-solid{
         cursor: pointer;
     }
 
+    nav ul .fa-bars {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
     nav ul li a {
         font-size: 18px;
         color: #fff;
