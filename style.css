@@ -20,8 +20,6 @@ body {
 
 nav {
     display: flex;
-    top: 0;
-    left: 0;
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
