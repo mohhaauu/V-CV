@@ -137,9 +137,6 @@ nav ul li a:hover::after{
 
 .about-column-2{
     flex-basis: 60%;
-    display: flex;
-    align-items: center;
-    padding: 20px;
 }
 
 .about-column-1, .about-column-2 {
@@ -163,7 +160,6 @@ nav ul li a:hover::after{
 
 .about-column-2 p {
     line-height: 1.6;
-    width: 100%;
 }
 
 /* Skills Section Styles */
