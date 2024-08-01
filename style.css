@@ -352,19 +352,42 @@ form .button2 {
     --percentage: 85; /* Computer skills & knowledge */
 }
 
+nav .fa-solid{
+    display: none;
+}
 @media only screen and (max-width: 600px) {
-    .fa-bars {
+    .header-text {
+        text-align: center;
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;   
+    }
+
+    nav .fa-solid{
         display: block;
     }
-    ul {
-        display: none;
+    nav ul {
+        background: #007bff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
     }
-    #header-text {
-        text-align: center;
+
+    nav ul li {
+        display: block;
+        margin: 25px;
     }
-    #header-text h1 {
-        font-size: 40px;
-        line-height: 50px;
+    
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
     .row {
         flex-direction: column;
