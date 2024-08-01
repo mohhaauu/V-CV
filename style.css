@@ -265,6 +265,8 @@ nav ul li a:hover::after{
     padding: 10px 20px;
     display: inline-block;
     background: #333;
+    color: white;
+    border-radius: 8px;
 }
 
 .contact-right form {
@@ -293,6 +295,7 @@ form .button2 {
     margin-top: 20px;
     cursor: pointer;
     border-radius: 6px;
+    color:lightsteelblue;
 }
 .copyright {
     width: 100%;
