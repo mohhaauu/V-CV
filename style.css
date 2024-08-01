@@ -105,6 +105,7 @@ nav ul li a:hover::after{
 
 #header-text {
     padding-top: 100px;
+    text-align: center;
 }
 
 #header-text p {
@@ -130,10 +131,15 @@ nav ul li a:hover::after{
 
 .about-column-1 {
     flex-basis: 35%;
+    display: flex;
+    align-items: center;
 }
 
 .about-column-2{
     flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
 .about-column-1, .about-column-2 {
@@ -146,6 +152,7 @@ nav ul li a:hover::after{
     border-radius: 15px;
     display: block; 
     margin: 0 auto;
+    height: auto;
 }
 
 .sub-title {
@@ -156,6 +163,7 @@ nav ul li a:hover::after{
 
 .about-column-2 p {
     line-height: 1.6;
+    width: 100%;
 }
 
 /* Skills Section Styles */
