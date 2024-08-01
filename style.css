@@ -356,6 +356,9 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 600px) {
+    #sidemenu{
+        margin-top: 0;
+    }
     .header-text {
         text-align: center;
         margin-top: 100%;
