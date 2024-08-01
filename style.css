@@ -264,7 +264,10 @@ nav ul li a:hover::after{
     border-radius: 5px;
     cursor: pointer;
 }
-
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 20px;
+}
 
 .contact-left form {
     display: flex;
