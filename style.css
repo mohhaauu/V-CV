@@ -25,6 +25,16 @@ nav {
     padding: 20px 0;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: none;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -375,7 +385,7 @@ nav .fa-solid{
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top: 30px;
+        padding-top: 40px;
         z-index : 2;
         transition: 0.5s;
     }
