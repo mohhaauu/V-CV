@@ -90,9 +90,6 @@ nav ul li a:hover::after{
     font-size: 18px;
 }
 
-nav {
-    
-}
 .fa-bars, .fa-square-xmark {
     cursor: pointer;
     color: #333;
@@ -132,7 +129,7 @@ nav {
 }
 
 .about-column-1 {
-    flex-basis: 35px;
+    flex-basis: 35%;
 }
 
 .about-column-2{
