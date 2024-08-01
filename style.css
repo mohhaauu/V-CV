@@ -13,14 +13,9 @@ body {
 }
 
 .container {
-
-    /*width: 80%;
-    margin: 0;*/
-    padding: 10px 10px;
     width: 80%;
     margin: 0;
     padding: 10px 10%;
-
 }
 
 nav {
@@ -45,7 +40,7 @@ nav ul {
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 0 20px;
+    margin: 10px 20px;
 }
 
 nav ul li a{
@@ -90,7 +85,7 @@ nav ul li a:hover::after{
 }
 
 #sidemenu a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 18px;
 }
@@ -110,6 +105,7 @@ nav ul li a:hover::after{
 
 #header-text {
     padding-top: 100px;
+    text-align: center;
 }
 
 #header-text p {
