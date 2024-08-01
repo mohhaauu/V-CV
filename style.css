@@ -254,23 +254,16 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: blue;
+    color: #007bff;
     transform: translateY(-5px);
 }
-.button {
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    border: none;
+
+.button.button2 {
+    display: inline-block;
+    background: #333;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
 }
-
-.button2 {
-    background: #333;
-}
-
 .contact-left, .contact-right {
     flex: 1;
     padding: 20px;
