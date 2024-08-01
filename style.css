@@ -260,6 +260,7 @@ nav ul li a:hover::after{
 }
 
 .button.button2 {
+    margin-top: 30px;
     display: inline-block;
     background: #333;
 }
