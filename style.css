@@ -271,6 +271,10 @@ nav ul li a:hover::after{
     background: #333;
 }
 
+.button.button2 {
+    display: inline-block;
+}
+
 .contact-left, .contact-right {
     flex: 1;
     padding: 20px;
