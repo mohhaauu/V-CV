@@ -13,17 +13,22 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
     flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    background: #fff;
+    z-index: 2;
 }
 
 nav ul {
@@ -34,6 +39,7 @@ nav ul {
     padding: 0;
     list-style: none;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
