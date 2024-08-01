@@ -15,7 +15,7 @@ body {
 .container {
     width: 80%;
     margin: 0;
-    padding: 10px 10px;
+    padding: 10px 10%;
 }
 
 nav {
@@ -90,9 +90,6 @@ nav ul li a:hover::after{
     font-size: 18px;
 }
 
-nav {
-    
-}
 .fa-bars, .fa-square-xmark {
     cursor: pointer;
     color: #333;
