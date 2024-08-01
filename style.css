@@ -385,6 +385,24 @@ nav .fa-solid{
         margin: 25px;
     }
     
+    nav ul .fa-square-xmark {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    nav ul.show {
+        right: 0;
+    }
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
