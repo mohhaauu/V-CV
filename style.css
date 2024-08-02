@@ -455,3 +455,8 @@ nav .fa-solid{
         width: 100%;
     }
 }
+#message {
+    color: black;
+    margin-top: -10px;
+    display: block;
+}
